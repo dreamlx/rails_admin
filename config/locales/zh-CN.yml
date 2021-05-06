@@ -1,0 +1,32 @@
+zh-CN:
+  activerecord:
+    models:
+      configration: 策略配置
+      
+
+
+    attributes:
+      configration:
+        title: 策略名称
+        symbol_code: 期货代码
+        memo: 备注说明
+        created_at: 创建时间
+        updated_at: 更新时间
+        long_short_judgment: 趋势选择
+        major_period: 主要均线
+        minor_period: 辅助均线
+        boll: 布林线周期
+        run_level: 运行模式
+        start_from: 开始日期
+        to_end: 结束日期
+        sim_account: 信易模拟账号
+        future_company: 期货公司
+        future_account: 期货账号
+
+      
+
+
+
+  time:
+    formats:
+      long: "%Y-%m-%d %H:%M:%S"
