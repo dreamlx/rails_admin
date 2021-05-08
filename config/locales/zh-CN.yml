@@ -16,6 +16,7 @@ zh-CN:
         major_period: 主要均线
         minor_period: 辅助均线
         boll: 布林线周期
+        kbar_period: kbar单位
         run_level: 运行模式
         start_from: 开始日期
         to_end: 结束日期

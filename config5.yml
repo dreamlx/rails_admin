@@ -1,0 +1,15 @@
+---
+:title: 鸡蛋2009布林线_copy_2021-05-06 23:56:30 +0000
+:symbol_code: DCE.jd2009
+:run_level: replay
+:long_short_judgment: auto
+:major_period: 240
+:minor_period: 60
+:start_from: '2020-01-01'
+:to_end: '2021-05-02'
+:sim_account: admin@example.com
+:sim_pwd: password
+:future_company: H海通期货
+:future_account: '13817230201'
+:future_pwd: password
+:memo: http://172.18.0.3:3005

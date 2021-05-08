@@ -64,4 +64,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'activeadmin'
 gem 'devise'
 gem 'cancancan'
+
+gem 'active_admin_theme'
 #gem 'rails-i18n'

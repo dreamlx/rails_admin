@@ -1,0 +1,19 @@
+---
+title: test001
+symbol_code: DCE.jd2101
+run_level: replay
+long_short_judgment: auto
+major_period: 240
+minor_period: 60
+boll_period: 26
+kbar_period: 5
+start_from: '2020-05-08'
+to_end: '2021-05-08'
+web_url: http://127.0.0.1:3006
+config_url: http://127.0.0.1:3000/yml/config6.yml
+sim_account: admin@example.com
+sim_pwd: password
+future_company: ''
+future_account: ''
+future_pwd: ''
+memo: '执行策略docker 后的可视化地址: http://127.0.0.1:3006,  配置文件下载地址: http://127.0.0.1:3000/yml/config6.yml'

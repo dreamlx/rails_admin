@@ -1,0 +1,18 @@
+---
+title: 鸡蛋2009布林线_copy_2021-05-06 23:56:30 +0000
+symbol_code: DCE.jd2009
+run_level: replay
+long_short_judgment: auto
+major_period: 240
+minor_period: 60
+boll_period: 26
+start_from: '2020-01-01'
+to_end: '2021-05-02'
+web_url: http://127.0.0.1:3005
+config_url: http://127.0.0.1:3000/yml/config5.yml
+sim_account: admin@example.com
+sim_pwd: password
+future_company: H海通期货
+future_account: '13817230201'
+future_pwd: password
+memo: '执行策略docker 后的可视化地址: http://127.0.0.1:3005,  配置文件下载地址: http://127.0.0.1:3000/yml/config5.yml'
