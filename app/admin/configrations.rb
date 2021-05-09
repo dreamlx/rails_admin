@@ -72,8 +72,8 @@ ActiveAdmin.register Configration do
       end
 
       f.inputs 'simsnow 账号配置' do
-        
-        
+        f.object.sim_account = '18616770111' if f.object.sim_account.blank?
+        f.object.sim_pwd = 'yu079124' if f.object.sim_pwd.blank?
         f.input :sim_account, label: '信易账户'
         f.input :sim_pwd, as: :password, label: '账号密码'
 
@@ -104,6 +104,7 @@ ActiveAdmin.register Configration do
   show do
     attributes_table do
       row :title
+      row :position_size
       row :symbol_code
       row :run_level
       row :long_short_judgment
