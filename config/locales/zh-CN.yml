@@ -20,6 +20,7 @@ zh-CN:
         run_level: 运行模式
         start_from: 开始日期
         to_end: 结束日期
+        position_size: 开仓手数
         sim_account: 信易模拟账号
         future_company: 期货公司
         future_account: 期货账号

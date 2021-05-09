@@ -16,7 +16,7 @@ ActiveAdmin.register Configration do
       :symbol_code, :long_short_judgment, 
       :major_period, :minor_period,
       :boll, :start_from, :to_end, :kbar_period,
-      :sim_account, :sim_pwd,
+      :sim_account, :sim_pwd, :position_size,
       :future_account, :future_pwd, :future_company, :memo
       ]
   #   permitted << :other if params[:action] == 'create' && current_user.admin?
@@ -34,6 +34,7 @@ ActiveAdmin.register Configration do
 
     f.inputs '配置内容' do
       f.input :title, hint: '策略命名原则为帮助记忆, 比如 jd_boll_只开空'      
+      f.input :position_size
       f.input :symbol_code, label: '期货代码', hint:  (link_to '提示格式: DCE.jd2109, 期货代码组合一览', 'https://www.akshare.xyz/zh_CN/latest/data/futures/futures.html', target: '_blank')
       f.input :run_level, label: '运行模式', 
       :as => :select, 
@@ -71,6 +72,7 @@ ActiveAdmin.register Configration do
       end
 
       f.inputs 'simsnow 账号配置' do
+        
         
         f.input :sim_account, label: '信易账户'
         f.input :sim_pwd, as: :password, label: '账号密码'
@@ -164,6 +166,7 @@ ActiveAdmin.register Configration do
       resource.save!
       
       recipe = { 'title' => resource.title,
+      'position_size' => resource.position_size,
       'symbol_code' => resource.symbol_code, 
       'run_level' => resource.run_level,
       'long_short_judgment' => resource.long_short_judgment,
