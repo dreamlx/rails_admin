@@ -18,14 +18,13 @@
     pwd: password
 
 
-```
-    下载配置后, 从 https://github.com/dreamlx/rails_admin/tree/master/lib/tasks
-    下载策略文件夹
+
+
+    下载配置后, 从 [https://github.com/dreamlx/rails_admin/tree/master/lib/tasks](https://github.com/dreamlx/rails_admin/tree/master/lib/tasks) 下载策略文件夹
 
     配置文件 configN.yml 和 main.py 在同一个目录
     
 
-```
 执行:
 
         python main.py config1.yml
