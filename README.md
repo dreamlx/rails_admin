@@ -11,14 +11,17 @@ Things you may want to cover:
 
 * Configuration
 
-* Database creation
+    58  docker-compose --version
+    59  docker-compose up
+    60  docker-compose run db:create
+    61  docker-compose run rails db:create
+    62  docker-compose run web rails db:create
+    63  docker-compose run web rails db:migrate
+    64  docker-compose run web rails db:seed
+    65  docker-compose up -d
 
-* Database initialization
+    http://127.0.0.1:3000/admin
+    本地访问路径
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+    user:  admin@example.com
+    pwd: password

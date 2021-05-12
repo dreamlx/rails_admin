@@ -149,7 +149,7 @@ ActiveAdmin.register Configration do
     if request.post?
       
       ip_address = '127.0.0.1'
-
+      host_address = '39.101.205.47'
       port = 3000 + resource.id
 
       config_name_org = 'config' + resource.id.to_s + '.yml'
@@ -157,7 +157,7 @@ ActiveAdmin.register Configration do
 
       #创建文件,参数1:路径path,参数2:对内容的操作
       web_gui = 'http://' + ip_address + ':'+ port.to_s
-      download_file = 'http://' + ip_address + ':3000/' + 'yml/' + config_name_org
+      download_file = 'http://' + host_address + ':3000/' + 'yml/' + config_name_org
 
       resource.web_url = web_gui
       resource.config_url = download_file
@@ -198,6 +198,8 @@ ActiveAdmin.register Configration do
 
     new_item = resource.dup
     new_item.title += ('_copy_' + Time.now.to_s)
+    new_item.web_url = ''
+    new_item.config_url = ''
     new_item.save
     flash[:notice] = '复制配置成功' + ('_copy_' + Time.now.to_s)
     redirect_to admin_configrations_path
